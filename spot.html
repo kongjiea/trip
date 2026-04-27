@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>景点攻略 | 山海游记</title>
+    <meta name="description" content="中国热门景点详细攻略页面，包含最佳季节、门票、交通、路线、美食和住宿建议。" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="spot">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark">山海</span>
+          <span class="brand-text">游记</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="打开导航">
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="main-nav">
+          <a href="./index.html">首页</a>
+          <a href="./spots.html">热门景点</a>
+          <a href="#spot-content">旅游攻略</a>
+          <a href="./index.html#about">关于我们</a>
+          <a class="nav-search" href="./spots.html">搜索攻略</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="spot-content">
+      <section class="detail-hero" id="detail-hero"></section>
+      <section class="section">
+        <div class="container detail-layout">
+          <aside class="toc-panel" id="spot-toc"></aside>
+          <article class="detail-content" id="spot-detail"></article>
+        </div>
+      </section>
+      <section class="section section-tinted">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">延伸阅读</p>
+            <h2>你还可以顺手看看这些目的地</h2>
+          </div>
+          <div class="related-grid" id="related-spots"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>山海游记</h3>
+          <p>把行前准备里最关键的信息，整理成统一结构的详细攻略。</p>
+        </div>
+        <div>
+          <h3>更多景点</h3>
+          <a href="./spots.html">返回景点列表</a>
+        </div>
+        <div>
+          <h3>提醒</h3>
+          <p>门票、开放时间和预约政策会变动，出发前请再次核对官方信息。</p>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="返回顶部">↑</button>
+
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

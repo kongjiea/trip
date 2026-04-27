@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>热门景点列表 | 山海游记</title>
+    <meta
+      name="description"
+      content="浏览中国10大热门旅行景点，按地域、类型、季节与热度筛选，快速找到适合你的国内旅行目的地。"
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="spots">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark">山海</span>
+          <span class="brand-text">游记</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="打开导航">
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="main-nav">
+          <a href="./index.html">首页</a>
+          <a href="./spots.html">热门景点</a>
+          <a href="./spots.html#guide">旅游攻略</a>
+          <a href="./index.html#about">关于我们</a>
+          <a class="nav-search" href="#filter-panel">搜索攻略</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero page-hero-list">
+        <div class="container">
+          <p class="eyebrow">全部目的地</p>
+          <h1>10 个热门景点，按季节和旅行气质慢慢挑。</h1>
+          <p>
+            先根据地域、类型、适合季节缩小范围，再进入详情页看门票、交通、路线和住宿建议。
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="guide">
+        <div class="container list-layout">
+          <aside class="filter-panel" id="filter-panel">
+            <div class="panel-section">
+              <label for="search-input">搜索景点或城市</label>
+              <input id="search-input" type="search" placeholder="例如：杭州 / 长城" />
+            </div>
+            <div class="panel-section">
+              <label for="region-filter">地域</label>
+              <select id="region-filter">
+                <option value="">全部地域</option>
+              </select>
+            </div>
+            <div class="panel-section">
+              <label for="category-filter">景点类型</label>
+              <select id="category-filter">
+                <option value="">全部类型</option>
+              </select>
+            </div>
+            <div class="panel-section">
+              <label for="season-filter">适合季节</label>
+              <select id="season-filter">
+                <option value="">全部季节</option>
+              </select>
+            </div>
+            <div class="panel-section">
+              <label for="popularity-filter">热门程度</label>
+              <select id="popularity-filter">
+                <option value="">全部热度</option>
+                <option value="极高">极高</option>
+                <option value="很高">很高</option>
+              </select>
+            </div>
+            <button class="button button-secondary filter-reset" id="reset-filters" type="button">
+              重置筛选
+            </button>
+          </aside>
+
+          <div class="results-panel">
+            <div class="results-head">
+              <div>
+                <p class="eyebrow">筛选结果</p>
+                <h2 id="results-title">全部景点</h2>
+              </div>
+              <p id="results-count"></p>
+            </div>
+            <div class="spot-grid" id="spot-list"></div>
+            <div class="empty-state hidden" id="empty-state">
+              <h3>没有找到符合条件的景点</h3>
+              <p>可以清空筛选条件，或者尝试按城市名、景点类型重新搜索。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>山海游记</h3>
+          <p>把中国热门旅行目的地整理成可直接参考的攻略结构。</p>
+        </div>
+        <div>
+          <h3>热门入口</h3>
+          <a href="./spots.html?category=历史文化">历史文化</a>
+          <a href="./spots.html?category=山水自然">山水自然</a>
+        </div>
+        <div>
+          <h3>旅行提醒</h3>
+          <p>节假日与暑期出行，请优先核对预约规则和交通承载情况。</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

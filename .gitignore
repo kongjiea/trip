@@ -1,0 +1,32 @@
+# OS-generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs / temp files
+*.log
+*.tmp
+*.temp
+
+# Environment files
+.env
+.env.*
+
+# Local browser verification artifacts
+.playwright-mcp/
+*-theme-check.png
+!favicon.svg
+
+# Codex: ignore everything by default, allow only the shared project skill
+/.codex/**
+!/.codex/
+!/.codex/skills/
+!/.codex/skills/karpathy-guidelines/
+!/.codex/skills/karpathy-guidelines/SKILL.md
