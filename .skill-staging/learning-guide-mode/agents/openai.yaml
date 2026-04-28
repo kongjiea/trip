@@ -1,0 +1,7 @@
+interface:
+  display_name: "Learning Guide Mode"
+  short_description: "Turn chats into reusable study guides"
+  default_prompt: "Use $learning-guide-mode to turn this discussion into a practical single-file Markdown study guide."
+
+policy:
+  allow_implicit_invocation: true
